@@ -1,0 +1,441 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    max-width: 1920px;
+}
+
+.material-icons.md-36 {
+    font-size: 36px; color: #220E6B;
+    cursor: pointer;
+}
+
+h1 {
+    color: #220E6B;
+    font-weight: bold;
+    font-size: 42px
+}
+
+.b-size {
+    width: 50px;
+    height: 50px;
+}
+
+/*First page*/
+
+.first-page {
+    background: url(../img/first-bg.png) no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.first-block {
+    width: 90%;
+    height: 70%;
+    background-color: #ffffff;
+}
+
+.first-block-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.first-page-search {
+    display: flex;
+    align-content: center;
+}
+
+.first-page-search label{
+    color: #220E6B;
+    align-self: center;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+.first-page-input {
+    border: none;
+    border-bottom: solid 2px #220E6B;
+    height: 25px;
+    width: 0px;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+.first-page-input.active{
+    width: 200px;
+    transition: all 0.5s 0.3s ease;
+    -webkit-transition: all 0.5s 0.3s ease;
+    -moz-transition: all 0.5s 0.3s ease;
+    -ms-transition: all 0.5s 0.3s ease;
+    -o-transition: all 0.5s 0.3s ease;
+}
+
+.first-page-social img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.first-block-context {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.first-block-context p {
+    color: #332777;
+}
+
+.first-block-context button {
+    background-color: #332777;
+    border: none;
+    width: 100px;
+    height: 30px;
+    margin-top: 10px;
+    border-radius: 2px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.first-button {
+    bottom: 0;
+    position: absolute;
+    margin-bottom: 20px;
+}
+
+/*Second page*/
+
+.second-page {
+    background: url(../img/second-bg.png) no-repeat;
+    height: 100vh;
+    position: relative;
+}
+
+.second-block {
+    width: 50%;
+    height: 100vh;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.second-block-context {
+    position: absolute;
+    top: 10%;
+    left: 30%;
+}
+
+.second-block-context h1 {
+    color: white;
+    font-weight: bold;
+    -webkit-text-stroke: 1px #332777;
+    font-size: 100px;
+}
+
+.second-block-context p {
+    color: #332777;
+}
+
+.second-block-context button {
+    background-color: #ffffff;
+    border: solid 2px #332777;
+    width: 100px;
+    height: 30px;
+    border-radius: 2px;
+    color: #332777;
+    cursor: pointer;
+}
+
+.second-button {
+    bottom: 0;
+    position: absolute;
+    margin-bottom: 20px;
+}
+
+.second-button-center {
+    display: flex;
+    justify-content: center;
+}
+
+/*Third page*/
+
+.third-page {
+    background-color: #190a48;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.third-page-left-block {
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background: url(../img/third-bg.png) no-repeat;
+    display: flex;
+    align-self: center;
+    border-radius: 100%;
+    position: absolute;
+    animation: circle 4s linear infinite;
+}
+
+@keyframes circle {
+    0% { bottom: 100%; }
+    25% { bottom: 0; width: 100px; height: 100px; }
+    30% { bottom: 0; height: 50px; width: 110px; }
+    35% { bottom: 0; width: 100px; height: 100px; }
+    70% { bottom: 100%; }
+    100% { bottom: 100%; }
+}
+
+.third-page-right-block {
+    height: 100vh;
+    width: 50%;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.third-page-search {
+    display: flex;
+    align-content: center;
+    position: absolute;
+    left: 20%;
+    top: 10%;
+}
+
+.third-page-search .material-icons {
+    color: #ffffff;
+}
+
+.third-page-search label{
+    color: #ffffff;
+    align-self: center;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+.third-page-input {
+    border: none;
+    background-color: #190A48;
+    border-bottom: solid 2px #ffffff;
+    height: 25px;
+    width: 0px;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+.third-page-input.active{
+    width: 200px;
+    transition: all 0.5s 0.3s ease;
+    -webkit-transition: all 0.5s 0.3s ease;
+    -moz-transition: all 0.5s 0.3s ease;
+    -ms-transition: all 0.5s 0.3s ease;
+    -o-transition: all 0.5s 0.3s ease;
+}
+
+.third-block-context {
+    position: absolute;
+    top: 30%;
+    right: 20%;
+    color: #ffffff;
+}
+
+.third-block-context h1 {
+    color: #ffffff;
+}
+
+.third-block-context button {
+    background-color: #ffffff;
+    border: none;
+    width: 100px;
+    height: 30px;
+    margin-top: 20px;
+    border-radius: 2px;
+    color: #332777;
+    cursor: pointer;
+}
+
+.third-button {
+    bottom: 0;
+    position: absolute;
+    margin-bottom: 20px;
+}
+
+/*Fourth page*/
+
+.fourth-page {
+    background: url(../img/fourth-bg.png) no-repeat;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fourth-page-block {
+    width: 50%;
+    height: 100vh;
+}
+
+.fourth-page-search {
+    display: flex;
+    align-content: center;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+}
+
+.fourth-page-search .material-icons {
+    color: #ffffff;
+}
+
+.fourth-page-search label{
+    color: #ffffff;
+    align-self: center;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+.fourth-page-input {
+    border: none;
+    background-color: #310173;
+    border-bottom: solid 2px #ffffff;
+    height: 25px;
+    width: 0px;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+.fourth-page-input.active{
+    width: 200px;
+    transition: all 0.5s 0.3s ease;
+    -webkit-transition: all 0.5s 0.3s ease;
+    -moz-transition: all 0.5s 0.3s ease;
+    -ms-transition: all 0.5s 0.3s ease;
+    -o-transition: all 0.5s 0.3s ease;
+}
+
+.fourth-block-context {
+    position: absolute;
+    top: 35%;
+    right: 20%;
+    color: #ffffff;
+}
+
+.fourth-block-context h1 {
+    color: #ffffff;
+}
+
+.fourth-block-context button {
+    background-color: #ffffff;
+    border: none;
+    width: 100px;
+    height: 30px;
+    margin-top: 20px;
+    border-radius: 2px;
+    color: #332777;
+    cursor: pointer;
+}
+
+.fourth-page-social {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 30px;
+}
+
+.fourth-page-social img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+    .second-block-context h1 {
+        color: white;
+        font-weight: bold;
+        -webkit-text-stroke: 1px #332777;
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .third-page-search {
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .first-block-top {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .first-page-social {
+        align-self: flex-end;
+        margin-top: 10px;
+    }
+
+    .second-block-context {
+        padding-right: 10px;
+    }
+
+    .circle {
+        display: none;
+    }
+
+    label {
+        display: none;
+    } 
+}
+
+@media screen and (max-width: 580px) {
+    .first-block-context p {
+        padding: 0 10px;
+    }
+
+    .second-block {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .second-block-context p {
+        padding-right: 10px;
+    }
+
+    .fourth-block-context {
+        padding-left: 40px;
+    }
+
+    .fourth-page {
+        background: none;
+        background-color: #2D026C;
+    }
+}
